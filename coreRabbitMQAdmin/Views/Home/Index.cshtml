@@ -1,0 +1,30 @@
+﻿
+@model List<Stoc>
+    <script>
+        function setValue(selectedOption){
+            var price=selectedOption.getAttribute('price');   
+            document.getElementById("Value").value=price;    
+
+            var stocID=selectedOption.id;   
+            document.getElementById("ID").value=stocID;      
+        }
+    </script>
+<div class="container">
+    <div class="jumbotron">
+        <h3>Kağıt Fiyatını Güncelle</h3>
+    </div>
+    <hr>
+    @using(Html.BeginForm("Push","Home","FormMethod.Post"))
+    {
+        <label>Kağıt Çeşidi:</label>
+        <select name="Name" id="Name" onchange="setValue(this.options[this.selectedIndex])">
+            @foreach(var stock in Model)
+            {
+                <option value="@stock.Name" id="@stock.ID" price="@stock.Value">@stock.Name</option>            
+            }
+        </select>                                             
+                <input type="text" name="Value" id="Value">
+                <input type="hidden" name= "ID" id="ID">                                            
+        <input type="submit" value="Güncelle" class="btn btn-success">
+    }
+</div>

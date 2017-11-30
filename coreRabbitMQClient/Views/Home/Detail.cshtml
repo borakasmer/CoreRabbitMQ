@@ -1,0 +1,27 @@
+@model Stoc
+<head>
+     <script src="~/scripts/signalr-client-1.0.0-alpha2-final.min.js"></script>
+     <script>
+        let connection = new signalR.HubConnection('/stochub');
+         
+         connection.on('SetConnectionId', data => {
+                console.log("ConnectionID : "+data);
+                var result=connection.invoke('ConnectGroup','@Model.Name',data);
+                console.log(result);
+
+        });   
+
+        connection.on('ChangeStocValue', data => {
+            console.log(JSON.stringify(data));
+               alert("New Price : "+data.value +" ₺");
+               document.getElementById("stocValue").innerHTML=data.value;
+        });
+
+        connection.start()
+     </script>    
+</head>
+ <div class="container">
+    <div class="jumbotron">
+        <h3>Alınan = @Model.Name : <span id="stocValue">@Model.Value</span> ₺</h3>
+    </div>
+ </div>

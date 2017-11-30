@@ -1,0 +1,10 @@
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQAdmin/bin/Debug/netcoreapp2.0/coreRabbitMQAdmin.deps.json
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQAdmin/bin/Debug/netcoreapp2.0/coreRabbitMQAdmin.runtimeconfig.json
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQAdmin/bin/Debug/netcoreapp2.0/coreRabbitMQAdmin.runtimeconfig.dev.json
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQAdmin/bin/Debug/netcoreapp2.0/coreRabbitMQAdmin.dll
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQAdmin/bin/Debug/netcoreapp2.0/coreRabbitMQAdmin.pdb
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQAdmin/obj/Debug/netcoreapp2.0/coreRabbitMQAdmin.csproj.CoreCompileInputs.cache
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQAdmin/obj/Debug/netcoreapp2.0/coreRabbitMQAdmin.AssemblyInfoInputs.cache
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQAdmin/obj/Debug/netcoreapp2.0/coreRabbitMQAdmin.AssemblyInfo.cs
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQAdmin/obj/Debug/netcoreapp2.0/coreRabbitMQAdmin.dll
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQAdmin/obj/Debug/netcoreapp2.0/coreRabbitMQAdmin.pdb

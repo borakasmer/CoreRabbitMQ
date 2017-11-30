@@ -1,0 +1,10 @@
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQService/bin/Debug/netcoreapp2.0/coreRabbitMQService.deps.json
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQService/bin/Debug/netcoreapp2.0/coreRabbitMQService.runtimeconfig.json
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQService/bin/Debug/netcoreapp2.0/coreRabbitMQService.runtimeconfig.dev.json
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQService/bin/Debug/netcoreapp2.0/coreRabbitMQService.dll
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQService/bin/Debug/netcoreapp2.0/coreRabbitMQService.pdb
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQService/obj/Debug/netcoreapp2.0/coreRabbitMQService.csproj.CoreCompileInputs.cache
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQService/obj/Debug/netcoreapp2.0/coreRabbitMQService.AssemblyInfoInputs.cache
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQService/obj/Debug/netcoreapp2.0/coreRabbitMQService.AssemblyInfo.cs
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQService/obj/Debug/netcoreapp2.0/coreRabbitMQService.dll
+/Users/borakasmer/Projects/coreRabbitMQ/coreRabbitMQService/obj/Debug/netcoreapp2.0/coreRabbitMQService.pdb
