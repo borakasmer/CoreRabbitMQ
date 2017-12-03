@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR.Client;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
@@ -8,7 +9,8 @@ using RabbitMQ.Client.Events;
 namespace coreRabbitMQService
 {
     class Program
-    {
+    {        
+        static HubConnection connectionSignalR;
         static void Main(string[] args)
         {
             var factory = new ConnectionFactory() { HostName = "localhost" };
@@ -16,11 +18,7 @@ namespace coreRabbitMQService
             using (var channel = connection.CreateModel())
             {
                 //Trigger The SignalR
-                var connectionSignalR = new HubConnectionBuilder()
-                .WithUrl("http://localhost:1453/stochub")
-                .WithConsoleLogger()
-                .Build();
-                connectionSignalR.StartAsync();
+                  Connect().Wait();
 
                 channel.QueueDeclare(queue: "Bitcoin",
                                      durable: false,
@@ -47,6 +45,14 @@ namespace coreRabbitMQService
                 Console.WriteLine(" Press [enter] to exit.");
                 Console.ReadLine();
             }
+        }
+
+        public static async Task Connect(){
+             connectionSignalR = new HubConnectionBuilder()
+                .WithUrl("http://localhost:1453/stochub")
+                .WithConsoleLogger()
+                .Build();   
+            await connectionSignalR.StartAsync();           
         }
     }
 }
